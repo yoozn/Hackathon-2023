@@ -27,11 +27,35 @@
     align-items: center;
     flex-direction: column;
     border-bottom: 2vh solid orange;
+    gap: 15px;
 
 }
 
 .reveal-text {
     font-size: 4rem;
+    user-select: none;
+}
+
+.info-container {
+    width: 20vw;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.r-text {
+
+}
+
+.r-icon {
+    max-width: 50px;
+}
+
+.ig-icon {
+    max-width: 70px;
+    margin-left: -13px;
 }
 
 .close {
@@ -127,7 +151,8 @@
 
 .img {
     /* border: 2px solid red; */
-    transform:scale(1.1);
+    transform:scale(1.05);
+    margin-right: 15px;
     /* flex: 1; */
 }
 img:hover {
