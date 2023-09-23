@@ -1,6 +1,9 @@
 input = document.querySelector(".text-input");
 messages = document.querySelector(".messages");
 body = document.querySelector('body');
+reveal = document.querySelector(".reveal-button");
+revealCanvas = document.querySelector(".reveal-container")
+closeButton = document.querySelector(".close");
 
 text = "";
 isTyping = false;
@@ -8,6 +11,10 @@ let replyIndex = 0;
 isReply = false;
 
 let replies = ["Hi! How are you!", "I'm from Western Europe..", "Thats cool!"];
+
+closeButton.addEventListener("click", ()=> {
+    revealCanvas.classList.remove("revealed");
+})
 
 input.addEventListener("focusin", (e) => 
 {
@@ -56,4 +63,8 @@ body.addEventListener("keydown", (e) => {
 
 
     }
+})
+
+reveal.addEventListener("click", () => {
+    revealCanvas.classList.add("revealed");
 })

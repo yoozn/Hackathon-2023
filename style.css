@@ -17,9 +17,33 @@
     position: absolute;
     height: 100vh;
     width: 100vw;
-    background-color: #F9Bf62;
+    background: linear-gradient(#F9Bf62, #f9bf62ab);
     bottom: 100vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: ease-in .9s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2vh solid orange;
+
 }
+
+.reveal-text {
+    font-size: 4rem;
+}
+
+.close {
+    position:absolute;
+    bottom: 3vh;
+    padding: 15px;
+    font-size: 1.4rem;
+    width: 15vw;
+    border-radius: 16px;
+}
+
+
 
 .outer-container {
     /* border: 2px solid black; */
@@ -226,6 +250,11 @@ img:active {
 .shrink {
     transform:scale(0);
     transition: .15s;
+}
+
+.revealed {
+    bottom: 20vh;
+
 }
 /* .footer {
     flex: .1;
