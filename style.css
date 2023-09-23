@@ -19,18 +19,20 @@
 }   
 
 .nav {
-    background-color: var(--nav);
+    background-color: var(--background);
     flex: .08;
-    border-bottom: solid #7447009b 6px;
+    /* border-bottom: solid #7447009b 6px; */
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
 .logo { 
-    width: 5vw;
-    height: 5vw;
-    margin-left: 3%;
+    position: absolute;
+    top: 1vh;
+    left: 1vh;
+    width: 13vw;
+    height: 13vw;
     transition: .11s;
 }
 
@@ -56,14 +58,34 @@
 
 .chatbox {
     background-color: var(--background);
-    flex: 1;
+    flex: .8;
     display: flex;
     flex-direction: column;
+    /* border: red solid 2px; */
 }
 
 .sidebar {
-    flex: .1;
-    background-color: #F9Bf62;
+    flex: .2;
+    background-color: #FEF0D2;
+    /* border:2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.img {
+    /* border: 2px solid red; */
+    transform:scale(1.1);
+}
+img:hover {
+    transform:scale(1.2);
+}
+
+img:active {
+    transform:scale(1);
 }
 
 .main {
@@ -89,7 +111,7 @@
     bottom: 3vh;
     right: 5vw;
     height: 7%;
-    width: 80%;
+    width: 65%;
     border-radius: 10px;
     outline: none;
     border: none;
@@ -105,7 +127,6 @@
 .messages {
     display:flex;
     flex-direction: column;
-
 }
 
 .messages > .message {
