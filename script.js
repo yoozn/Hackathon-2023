@@ -28,7 +28,10 @@ body.addEventListener("keydown", (e) => {
             console.log({e, text});
             message = document.createElement("p");
             message.textContent = text;
-            message.classList.add("message");
+            message.classList.add("shrink");
+            setTimeout(() => {
+                message.classList.add("message");
+            }, 200)
             messages.appendChild(message);
             text = "";
             input.value = "";
@@ -37,11 +40,13 @@ body.addEventListener("keydown", (e) => {
 
             setInterval(() => {
                 if (isReply){
-
                     let reply = document.createElement("p");
                 reply.textContent = replies[replyIndex];
                 replyIndex++;
-                reply.classList.add("reply");
+                reply.classList.add("shrink");
+                setTimeout(() => {
+                    reply.classList.add("reply");
+                }, 200)
                 messages.appendChild(reply);
                 isReply = false;
             }

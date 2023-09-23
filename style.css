@@ -30,11 +30,15 @@
     width: 5vw;
     height: 5vw;
     margin-left: 3%;
-    transition: .14s;
+    transition: .11s;
 }
 
 .logo:hover {
     transform: scale(1.1);
+}
+
+.logo:active {
+    transform:scale(.95);
 }
 
 .title {
@@ -103,6 +107,7 @@
 }
 
 .messages > .message {
+    transform:scale(1);
     margin: 20px;
     margin-left: 25px;
     margin-top: 22px;
@@ -114,7 +119,9 @@
     transition: .2s;
 }
 
-.reply {
+
+.messages > .reply {
+    transform:scale(1);
     justify-self: flex-end;
     margin: 20px;
     margin-left: auto;
@@ -122,9 +129,13 @@
     padding: 20px;
     width: max-content;
     background-color: #A4C794;
-    /* border: 2px solid #F4F4F4; */
     border-radius: 16px;
     transition: .2s;
+}
+
+.shrink {
+    transform:scale(0);
+    transition: .15s;
 }
 /* .footer {
     flex: .1;
