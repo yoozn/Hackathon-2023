@@ -24,7 +24,7 @@
     flex: .08;
     /* border-bottom: solid #7447009b 6px; */
     display: flex;
-    justify-content: start;
+    justify-content: flex-end;
     align-items: center;
 }
 
