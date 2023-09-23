@@ -65,6 +65,16 @@
     font-size: 1.4rem;
     width: 15vw;
     border-radius: 16px;
+    background-color: #F9Bf62;
+    border: 2px solid black;
+}
+
+.close:hover {
+    transform:scale(1.05);
+}
+
+.close:active {
+    transform: scale(.95);
 }
 
 
@@ -215,13 +225,28 @@ img:active {
     right: 2vw;
     width: max-content;
     height: 70%;
-    bottom: 1.2vh;
+    bottom: 1.1vh;
     border-radius: 8px;
     font-size: 1.5rem;
+    background-color: #F9Bf62;
+    border: 2px solid rgba(0, 89, 255, 0.495);
+    transition: .14s;
+}
+
+.reveal-button:hover {
+    transform:scale(1.05); 
+    box-shadow: 0px 0px 8px blue;
+}
+
+.reveal-button:active {
+    transform:scale(.95);
 }
 
 .input-buttons {
-    width: 12%;
+    /* width: 12%; */
+    max-height: 30px;
+    padding-left: 0;
+    margin-left: 0;
 }
 .btns {
     position: absolute;
@@ -265,6 +290,7 @@ img:active {
     justify-self: flex-end;
     margin: 20px;
     margin-left: auto;
+    margin-right: 10vw;
     margin-top: 25px;
     padding: 20px;
     width: max-content;
