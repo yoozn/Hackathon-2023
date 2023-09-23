@@ -28,6 +28,8 @@
     align-items: center;
 }
 
+
+
 .logo { 
     position: absolute;
     top: 1vh;
@@ -52,6 +54,7 @@
     margin-left: 4%;
     user-select: none;
     transition: .14s;
+    margin-right: 20%;
 }
 
 .title:hover {
