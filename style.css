@@ -163,7 +163,7 @@ img:active {
 .reveal-button {
     position:absolute;
     right: 2vw;
-    width: 20%;
+    width: max-content;
     height: 70%;
     bottom: 1.2vh;
     border-radius: 8px;
