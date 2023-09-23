@@ -188,6 +188,7 @@ img:active {
     right: 5vw;
     height: 7%;
     width: 65%; */
+    padding: 20px;
     flex: 3;
     border-radius: 10px;
     height: 40px;
